@@ -16,6 +16,7 @@ addBtn.onclick = function (){
             </button>
         </div>
 `
+        newTask.value= ''
         let tasks_del =  document.querySelectorAll('.del')
         for(let i=0; i<tasks_del.length; i++){
             tasks_del[i].onclick = function (){
