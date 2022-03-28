@@ -22,10 +22,7 @@ addBtn.onclick = function (){
             tasks_del[i].onclick = function (){
                 this.parentNode.remove()
             }
-
         }
-
-
     }
 }
 
