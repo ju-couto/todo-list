@@ -12,7 +12,7 @@ addBtn.onclick = function (){
                 ${newTask.value}
             </span>
             <button class="del">
-                <i class="far fa-trash-alt"></i>
+                <span class="far fa-trash-alt"></span>
             </button>
         </div>
 `
@@ -22,13 +22,9 @@ addBtn.onclick = function (){
             tasks_del[i].onclick = function (){
                 this.parentNode.remove()
             }
-
         }
-
-
     }
 }
-
 document.addEventListener('keypress', function (e){
     if(e.key=='Enter'){
         addBtn.click();
