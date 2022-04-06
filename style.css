@@ -8,97 +8,78 @@
 }
 body{
     height: 100vh;
-    background: crimson;
-}
-h1{
-    font-family: sans-serif;
-    text-align: center;
-    margin-top: 5px;
+    background: #E5E5E5;
 }
 .container{
-    width: 30%;
-    min-width: 350px;
+    width: 550px;
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
-    background: white;
-    border-radius: 10px;
+    background: #E5E5E5;
 }
 #add-task{
-    position: relative;
-    padding: 30px 25px;
+    height: 72px;
 }
 #add-task input{
-    width: 85%;
-    height: 40px;
+    height: 100%;
+    width: 477px;
     font-family: sans-serif;
-    font-size: 15px;
-    border: 2px solid #d1d3d4;
+    font-size: 20px;
+    border: 0 solid ;
     padding: 13px;
-    color: #000000;
+    background-color: #2F3C4F;
+    color: white;
     font-weight: 500;
-    position: relative;
-    border-radius: 5px;
+
 }
 
 #add-task input:focus{
     outline: none;
-    border-color: crimson;
 }
 #add-task button{
     position: relative;
     float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
+    width: 72px;
+    height:100%;
     font-family: sans-serif;
     font-weight: 500;
-    font-size: 16px;
-    background-color: crimson;
+    font-size: 50px;
+    background-color:#00E1AD;
     border: none;
     color: #ffffff;
     cursor: pointer;
     outline: none;
 }
 #tasks{
-    background-color: #ffffff;
-    padding: 0px 20px;
+    padding: 0px ;
     border-radius: 10px;
     width: 100%;
     position: relative;
 }
 
-.task{
-    background-color: #f6e4e4;
-    height: 50px;
-    margin-bottom: 8px;
+.task {
+    height: 72px;
     padding: 5px 10px;
     display: flex;
-    border-radius: 5px;
+
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid #939697
+    margin: 1px;
+    background: white;
+}
+.task span{
+   margin-left: 10px;
+
 }
 #title-task{
     font-family: 'Poppins',sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
 }
-.task button{
-    background-color: crimson;
-    color: #ffffff;
-    height: 100%;
-    width: 40px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    outline: none
-}
+
 .task input{
-    height: 100%;
     cursor: pointer;
-    width: 20px
+
 }
 .task > input[type='checkbox']:checked + span{
     text-decoration: line-through  red
