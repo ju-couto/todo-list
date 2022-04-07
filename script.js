@@ -5,15 +5,17 @@ addBtn.onclick = function (){
     if(!newTask.value.length){
         alert('Please insert a task!')
     } else{
-        tasks.innerHTML += `
-        <div class="task">
-            <input type="checkbox" class="done">
+        let task = document.createElement("label")
+        task.classList.add("task")
+            task.innerHTML= ` 
+            <input type="checkbox" ${status} class="done">
             <span id="title-task">
                 ${newTask.value}
             </span>
-        </div>
         `
+        tasks.appendChild(task)
         newTask.value= ''
+
     }
 }
 document.addEventListener('keypress', function (e){
